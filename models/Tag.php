@@ -1,8 +1,8 @@
 <?php namespace Vdomah\GoodNewsTags\Models;
 
+use Model;
 use Cms\Classes\Controller;
 use Lovata\GoodNews\Models\Article;
-use Model;
 
 /**
  * Model
@@ -16,7 +16,6 @@ class Tag extends Model
      * Remove this line if timestamps are defined in the database table.
      */
     public $timestamps = false;
-
 
     /**
      * @var string The database table used by the model.
@@ -73,11 +72,11 @@ class Tag extends Model
      * Sets the "url" attribute with a URL to this object
      *
      * @param string                    $pageName
-     * @param Cms\Classes\Controller    $controller
      */
     public function getUrl($pageName)
     {
         $controller = Controller::getController();
+
         $params = [
             'id' => $this->id,
             'tags' => $this->slug,

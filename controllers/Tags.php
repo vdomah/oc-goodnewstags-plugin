@@ -13,5 +13,7 @@ class Tags extends Controller
     public function __construct()
     {
         parent::__construct();
+
+        BackendMenu::setContext('Lovata.GoodNews', 'main-good-news', 'side-good-news-tags');
     }
 }

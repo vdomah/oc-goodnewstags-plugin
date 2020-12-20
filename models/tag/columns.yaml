@@ -1,6 +1,6 @@
 columns:
     name:
-        label: Name
+        label: vdomah.goodnewstags::lang.tag.name
         type: text
         searchable: true
         sortable: true
